@@ -13,7 +13,9 @@ Provision a Digital Ocean droplet with Terraform.
 ### SSH Keys
 * [Add your ssh key to your Digitcal Ocean account](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2)
 * Get you ssh key id with 
+
     `curl -X GET -H "Content-Type: application/json" -H "Authorization: Bearer YOUR_TOKEN_HERE" "https://api.digitalocean.com/v2/account/keys"`
+
 * Export your ssh key id in `.bashrc` or `.bash_profile`
 
     `export TF_VAR_do_ssh_id="YOUR_ID_HERE"`
